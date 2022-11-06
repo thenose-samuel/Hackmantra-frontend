@@ -1,0 +1,189 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+html { font-size: 100% !important; }
+body { background: url(https://cl.ly/image/3o2V1z1a2N3k/bg-paper2.jpg) center center  repeat #eae4d1; color: #af915d; padding-bottom: 100px; font-family: 'Montserrat', sans-serif; }
+h1 { text-transform: uppercase; font-weight: bold;  }
+p { font-size: 1rem; line-height: 1.6; }
+hr { border-color: #c9b187; }
+
+
+
+/* Form Style
+---------------------------------- */
+body {
+    font-size: 120%;
+  }
+  
+  #demo {
+    padding: 1em;
+    background: #eae4d1;
+    width: 20em;
+    border-radius: 1em;
+  }
+  
+  Button {
+    padding: 1em;
+    font-size: 130%;
+    background: #af915d;
+    border-radius: 0.3em;
+  }
+  
+  #map {
+    padding: 1em;
+  }
+
+/* 0. INIT */
+.form-group {
+  display: block; 
+  position: relative;
+  }
+  .form-group .form-control {
+    border: 0;        
+    border-radius: 0; 
+    box-shadow: none; 
+    display: inline-block;
+    }
+
+
+    /* Input field style */
+    .form-group .form-control {
+      border: 3px solid #c0a77c;
+      background: transparent;
+      padding: 10px;
+      margin: 0 0 12px 0;
+      }
+      .form-group input.form-control,
+      .form-group select.form-control {
+        height: 50px;
+        }
+
+
+    /* Form texts */
+    .form-group .form-control {
+      font-size: 1.13rem !important;
+      color: #666;
+      }
+      .form-group label {
+        font-size: 1rem;
+        color: #887c4e;
+        }
+
+
+
+/* Styling Select box
+---------------------------------- */
+
+/* 1. Reset dropdown box */
+.form-group.select-box select {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  -o-appearance:none;
+  appearance:none;
+  }
+  select { text-indent: 0.01px; text-overflow: ''; } /* old FF */
+  select::-ms-expand { display: none; } /* IE */
+
+
+/* 2. Add styles */
+.form-group.select-box select {
+  background: #e3d8c4; 
+  border: 3px solid #c0a77c;
+  min-width: 100%;
+  padding-top: 9px;
+  }
+
+
+/* 3.Add arrows */
+.form-group.select-box:before {
+  /* background: #e3d8c4; */
+  display: inline-block;
+  width: 40px;
+  height: 44px;
+  
+  content: "\25BE";  
+  font-size: 1.25rem;
+  color: #8a621c;
+  line-height: 1;
+  text-align: center;
+
+  position: absolute;
+  margin: 30px 18px 0 0;
+  padding: 10px 0 0;
+  right: 0;
+  top: 0;  
+  z-index: 1;
+  }
+
+  /* FF30+ patch */
+  :-moz-any(.form-group.select-box):before {
+    background-color: #e3d8c4;
+    pointer-events: none;
+    z-index: 1;
+    margin: 31px 18px 0 0 !important;
+    }
+
+
+/* 4. Remove Dropdown selection dot */
+select:-moz-focusring { color: transparent !important; text-shadow: 0 0 0 #000;} /* FF */
+.form-group input:focus { outline: none !important; } /* IE */
+
+
+/* Browse button - Webkit only */
+@media screen and (-webkit-min-device-pixel-ratio:0){
+
+  /* Upload button */
+  .file-upload-button {
+    background: #e3d8c4 !important;
+    border: 3px solid #c0a77c !important;
+    cursor: pointer;
+    float: left;
+    text-indent: -99999px;
+    height: 30px !important;
+    width: 100px !important;
+    margin: 0 10px 0 0px;
+    padding: 0 0 0 30px;
+    position: relative;
+    }
+    .file-upload-button:before {
+      display: inline-block;
+      content: "Browse";  
+      font-size: 0.94rem;
+      color: #967337;
+      line-height: 1;
+      left: 0; 
+      text-indent: 0 !important;
+      position: absolute;
+      margin: 4px 0 0 20px;
+      }
+}
+
+
+
+
+/* Button */
+.btn-default,
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus {
+  background: #af915d;
+  border: 3px solid #af915d;
+  border-radius: 0;  
+  box-shadow: none;
+  padding: 10px 50px;
+  color: #eae4d1;
+  text-transform: uppercase;
+  font-weight: bold;
+  }
+  .btn-default:hover { 
+    background: transparent; 
+    color: #af915d; 
+    }
+
+
+.btn {
+  -webkit-transition:  all 200ms ease-in-out;
+  -moz-transition:  all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition:  all 200ms ease-in-out;
+  }
+
